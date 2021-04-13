@@ -15,9 +15,6 @@ html, body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
-    color: var(--mainText);
-}
 h1 { font-size: 56px;}
 h2 { font-size: 36px;}
 h3 { font-size: 28px;}
@@ -62,9 +59,10 @@ p, li, span, label, input, textarea{
 .section-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
     gap: 20px;
 }
+
 
 .item-wrapper {
     grid-column: span 2;
@@ -80,6 +78,14 @@ p, li, span, label, input, textarea{
     border-radius: 5px;
     box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.65);
 }
+
+#hero-section {
+    background-image: url("img/keyboard.jpg");
+    background-size: cover;
+
+    /* height: 100px; */
+    background-repeat: no-repeat;
+} 
 
 .screenshot {
     min-height: 210px;
@@ -130,6 +136,7 @@ p, li, span, label, input, textarea{
 }
 .right-column {
     margin: auto;
+    color: white;
 }
 
 a {
@@ -154,6 +161,13 @@ a:hover {
     .blurb-wrapper, .skills-wrapper {
         grid-column: span 2;
     }
+    #hero-section {
+        background-image: url("img/keyboard.jpg");
+        background-size: cover;
+    
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
 }
 
 .vertical-form {
