@@ -11,15 +11,16 @@
 <body>
     <div class="main-container">
         <h1>JobHunt</h1>
-        <h4>A branch from FITS, JobHunt is a job search tracking tracking website built with Python, Flask, and MySQL.</h4>
-        <p><a href="https://github.com/ColtanF/JobHunt.git" target="_blank" class="link-btn">GitHub Code</a>   
-            <!-- <a href="#" class="link-btn">Demo Site</a> -->
+        <h4>A branch from FITS, JobHunt is a job search tracking tracking website built with React, Flask, and MySQL.</h4>
+        <p><a href="https://github.com/ColtanF/jobhunt-react" target="_blank" class="link-btn">Front End Code</a>   
+            <a href="https://github.com/ColtanF/jobhunt-backend" target="_blank" class="link-btn">Back End Code</a>
+            <a href="https://coltanfranke-jobhunt.netlify.app/" class="link-btn">Demo Site</a>
             </p>
         <div class="img-container ">
-            <img loading="lazy" class="mySlides" src="/img/JobHuntHome.jpg" alt="JobHunt screenshot">
-            <img loading="lazy" class="mySlides" src="/img/JobHuntJobs.jpg" alt="JobHunt screenshot">
-            <img loading="lazy" class="mySlides" src="/img/JobHuntView.jpg" alt="JobHunt screenshot">
-            <img loading="lazy" class="mySlides" src="/img/JobHuntAdd.jpg" alt="JobHunt screenshot">
+            <img loading="lazy" class="mySlides" src="/img/JobHuntHome-new.jpg" alt="JobHunt screenshot">
+            <img loading="lazy" class="mySlides" src="/img/JobHuntJobs-new.jpg" alt="JobHunt screenshot">
+            <img loading="lazy" class="mySlides" src="/img/JobHuntView-new.jpg" alt="JobHunt screenshot">
+            <img loading="lazy" class="mySlides" src="/img/JobHuntAdd-new.jpg" alt="JobHunt screenshot">
             <button class="left-button w3-button" onclick="plusDivs(-1)">&#10094;</button>
             <button class="right-button w3-button" onclick="plusDivs(+1)">&#10095;</button>
         </div>
@@ -37,32 +38,43 @@
             (basic CRUD app, item tracking), which is why it was a branch and not a completely new project. 
             However, over time, the project expanded well past the originally
             scope of FITS and became its own beautiful thing. JobHunt has a cleaner design, expanded functionality,
-            and more fun JS/Python code that adds flavor to the site.
+            and more fun JS/Python code that adds flavor to the site. 
+        </p>
+        <p>
+            Originally, JobHunt existed as a full stack Flask app, where Flask handled both the rendering of the web pages 
+            as well as the "back end" calls to the MySQL database. However, I started learning React and discovered that I 
+            could add some functionality much more easily using React than I could with Flask, so I set out to convert JobHunt 
+            to React, first as a learning exercise but eventually migrating and deploying it as a full site. The front end is 
+            hosted on Netlify, and the backend (a pared down version of the original Flask app) is still deployed on Heroku.
         </p>
         <p>
             In JobHunt, a user can add, edit, view, and delete job postings that they find online. JobHunt uses 
             the information that the user enters to create convenient links to information such as the company's 
             office location and the application site. A user can personalize their job postings by listing
             the experience requirements that they do and do not feel that they meet. They can also rate jobs that
-            they add from 1-5 stars, and the top rated jobs will be displayed to the user on their home page.
+            they add from 1-5 stars. In the main jobs table, jobs can be filtered by status, with more features to come.
         </p>
         <br>
         <h3>Tech</h3>
         <hr>
         <p>Here is the tech stack that I used to build JobHunt:</p>
         <ul>
+            <li>React</li>
+            <li>Semantic UI React</li>
             <li>Python</li>
             <li>Flask</li>
             <li>HTML/CSS</li>
             <li>Javascript</li>
-            <li>Bootstrap 5.0</li>
+            <li>Bootstrap 5.0 (originally)</li>
             <li>MySQL</li>
-            <li>WTForms</li>
+            <li>WTForms (originally)</li>
         </ul>
         <br>
         <h3>Resources</h3>
         <hr>
         <ul>
+            <li><a href="https://react.semantic-ui.com/" target="_blank">Semantic UI React Docs</a></li>
+            <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Docs</a></li>
             <li><a href="https://github.com/ColtanF/JobHunt.git" target="_blank">Project Link</a></li>
             <li><a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank">Flask Docs</a></li>
             <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap 5.0 Docs</a></li>
